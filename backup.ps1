@@ -5,7 +5,7 @@
 # $gameDir\instance\saves\$saveName\backup  < substituted with variables to make it easy on you, less typoes
 
 # scheduler can be done from cmd prompt using this: 
-# schtasks /CREATE /SC DAILY /TN "backups" /TR "c:\Users\Administrator\backup.ps1" /ST 07:00
+# schtasks /CREATE /SC DAILY /TN "backups" /TR "powershell -ExecutionPolicy bypass -file c:\users\administrator\backup.ps1" /ST 07:00
 # for help : https://www.windowscentral.com/how-create-task-using-task-scheduler-command-prompt
 
 # scp module for ps : https://mcpmag.com/articles/2018/07/19/transfer-files-via-scp-with-powershell.aspx
